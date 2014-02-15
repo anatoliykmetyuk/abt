@@ -41,6 +41,9 @@ _bin_ - binaries are compiled here
 _lib_ - additional libraries that should be on classpath go here (JAR files)
 _build.abt_ - project-specific configurations file. It is a simple shell script that will be executed at each ABT call before any plugin is executed
 
+## Core plugins
+_compile_ - compilation plugin: `abt compile`. _ast_ - view abstract syntax tree of a source: `abt ast _source_`. _debug_ - open in a debugger: `abt debug _mainclass_`. _new_ - create project layout in a folder: `abt new`. _run_ - run main class: `abt run _mainclass_`. 
+
 ## Examples
 In order to create a new project, make a new empty directory, cd into it and invoke
 `abt new`
