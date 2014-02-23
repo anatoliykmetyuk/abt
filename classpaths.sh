@@ -1,7 +1,5 @@
-ABT=$(dirname "$0")
-
-. "$ABT/config/paths.sh"   # Load system-specific pathes
-. "$ABT/buildvars.sh"      # Load system-agnistic pathes
+. "$ABT_HOME/config/paths.sh"   # Load system-specific pathes
+. "$ABT_HOME/buildvars.sh"      # Load system-agnistic pathes
 
 # Set classpath and bootclasspath
 BOOTPATH="$SCALA_REFLECT:$SCALA_LIB"
