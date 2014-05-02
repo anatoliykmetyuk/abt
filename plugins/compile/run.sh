@@ -8,5 +8,5 @@ rm -r "$BINS_DIR/"*
 echo "Done"
 
 echo "Compiling into $LAYOUT_BINS"
-$SUBSCRIPT_BIN/scalac -bootclasspath "$BOOTPATH" -classpath "$CLASSPATH" -d "$BINS_DIR" $SOURCE_FILES
+$SUBSCRIPT_BIN/scalac -feature -bootclasspath "$BOOTPATH" -classpath "$CLASSPATH" -d "$BINS_DIR" $SOURCE_FILES
 echo "Done"
