@@ -10,5 +10,5 @@ P_CONFIG="$PLUGIN_HOME/config.sh"             # All system-dependent configurati
 
 if [[ -f $P_CONFIG ]]; then . "$P_CONFIG"            ; fi
 if [[ -f $P_INIT   ]]; then . "$P_INIT"              ; fi
-if [[ -f $P_RUN    ]]; then . "$P_RUN" "$PLUGIN_ARGS"; fi
+if [[ -f $P_RUN    ]]; then . "$P_RUN" $PLUGIN_ARGS; fi
 if [[ -f $P_TERM   ]]; then . "$P_TERM"              ; fi
